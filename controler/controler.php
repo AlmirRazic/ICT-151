@@ -8,7 +8,7 @@ function home()
     require_once 'view/home.php';
 }
 
-function displaySnows()
+function displaySnows_json()
 {
     $snows = getsnows();
     require_once 'view/snows.php';
@@ -55,22 +55,26 @@ function tryregister()
 {
 
 
-if ($_POST['registername'] == "" && $_POST['registerpass'] == "") {
-    register();
-} else {
-    $fichier=getusers();
-    $userdata['user'] = $_POST['registername'];
-    $userdata['pass'] = $_POST['registerpass'];
-    $fichier[] = $userdata;
-    putUsers($fichier);
+    if ($_POST['registername'] == "" && $_POST['registerpass'] == "") {
+        register();
+    } else {
+        $fichier = getusers();
+        $userdata['user'] = $_POST['registername'];
+        $userdata['pass'] = $_POST['registerpass'];
+        $fichier[] = $userdata;
+        putUsers($fichier);
 
         $_SESSION['username'] = $_POST['registername'];
         home();
 
-}
+    }
 }
 
+function displaySnows()
+{
+    $Snows = get_snows();
 
+}
 
 
 

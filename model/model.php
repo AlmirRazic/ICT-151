@@ -19,6 +19,22 @@ function putUsers($fichier)
     file_put_contents('model/dataStorage/users.json', json_encode($fichier));
 }
 
+function get_snows()
+{
+    $Query = "select";
+    $snows = executequery($Query);
+}
+function executequery($requête)
+{
+    openDBconnexion();
+
+}
+
+function openDBconnexion()
+{
+
+}
+
 function userconnect()
 {
     //mandatory arguments
