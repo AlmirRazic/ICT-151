@@ -16,10 +16,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="8601c9f5-4c54-4431-9262-e65fca2c0853" name="localhost" port="8080" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1XnImjUjRV1ztzQZsqb5njAAXTC" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projet web/CSUNVB" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ICT-151\ICT-151\model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,6 +45,11 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="151" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -44,7 +61,15 @@
       <option name="presentableId" value="Default" />
       <updated>1581675592799</updated>
       <workItem from="1581675593889" duration="58000" />
-      <workItem from="1581678979448" duration="48000" />
+      <workItem from="1581678979448" duration="74000" />
+      <workItem from="1582809386473" duration="1299000" />
+      <workItem from="1582883917484" duration="4317000" />
+      <workItem from="1583139506276" duration="7195000" />
+      <workItem from="1583333911101" duration="1292000" />
+      <workItem from="1583490783659" duration="3181000" />
+      <workItem from="1583744779285" duration="617000" />
+      <workItem from="1583823852419" duration="1852000" />
+      <workItem from="1583931181987" duration="6679000" />
     </task>
     <servers />
   </component>

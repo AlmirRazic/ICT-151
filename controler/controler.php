@@ -1,10 +1,14 @@
 <?php
-require_once 'model/model.php';
+
+
+require 'model/userManagment.php';
+require 'model/snowsManagment.php';
 
 // This file contains nothing but functions
 function home()
 {
-    $news = getNews();
+   // $news = getNews();
+    $_GET['action'] = 'home';
     require_once 'view/home.php';
 }
 
@@ -19,25 +23,17 @@ function login()
     require_once 'view/login.php';
 }
 
-function trylogin()
+function trylogin($user)
 {
-    $user = getusers();
-    if (isset($_POST['login']))
-    {
-        foreach ($user as $username)
-        {
-            if ($_POST['login'] == $username["user"] && $_POST['loginpass'] == $username["pass"])
-            {
-                $_SESSION['username'] = $_POST['login'];
-            }
-        }
+
+    if (getuser($user)){
         home();
-    }
-    else
-    {
-        require_once 'view/login.php';
+    }else{
+        login();
     }
 }
+
+
 
 function logout()
 {
@@ -72,8 +68,9 @@ function tryregister()
 
 function displaySnows()
 {
-    $Snows = get_snows();
+    $snows = get_snows();
 
+    require 'view/snows.php';
 }
 
 
